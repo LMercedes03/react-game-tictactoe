@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-export const calculateWinner = (squares) => {
+export const CalculateWinner = (squares) => {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],

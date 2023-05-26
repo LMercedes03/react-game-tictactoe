@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Board } from "./Board";
-import { calculateWinner } from "./CalculateWinner";
+import { CalculateWinner } from "./CalculateWinner";
 import "./TicTacToe.css";
 
 export const Game = () => {
@@ -17,7 +17,7 @@ export const Game = () => {
     setSquares(newSquares);
     setXIsNext(!xIsNext);
 
-    if (calculateWinner(newSquares) || newSquares.every((square) => square)) {
+    if (CalculateWinner(newSquares) || newSquares.every((square) => square)) {
       setGameOver(true);
     }
   };
@@ -29,7 +29,7 @@ export const Game = () => {
   };
 
   const renderStatus = () => {
-    const winner = calculateWinner(squares);
+    const winner = CalculateWinner(squares);
     let status;
 
     if (winner) {
