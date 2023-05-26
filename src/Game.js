@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Board } from "./Board";
-import { CalculateWinner } from "./CalculateWinner";
-import "./TicTacToe.css";
+import React, { useState } from "react"
+import { Board } from "./Board"
+import { CalculateWinner } from "./CalculateWinner"
+import "./TicTacToe.css"
 
 export const Game = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
