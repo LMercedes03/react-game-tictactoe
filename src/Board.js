@@ -1,12 +1,28 @@
 import React from 'react';
-import { Cell } from './Cell';
+import { Square } from './Square';
 
-export const Board = ({ board, handleCellClick }) => {
+export const Board = ({ squares, onClick }) => {
+  const renderSquare = (i) => (
+    <Square value={squares[i]} onClick={() => onClick(i)} />
+  );
+
   return (
     <div className="board">
-      {board.map((value, index) => (
-        <Cell key={index} value={value} onClick={() => handleCellClick(index)} />
-      ))}
+      <div className="board-row">
+        {renderSquare(0)}
+        {renderSquare(1)}
+        {renderSquare(2)}
+      </div>
+      <div className="board-row">
+        {renderSquare(3)}
+        {renderSquare(4)}
+        {renderSquare(5)}
+      </div>
+      <div className="board-row">
+        {renderSquare(6)}
+        {renderSquare(7)}
+        {renderSquare(8)}
+      </div>
     </div>
   );
 };
