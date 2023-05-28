@@ -1,0 +1,55 @@
+.board {
+    font-size:x-large;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background-image: linear-gradient(to right bottom, #a996c4, #9c81c9, #8c6dcd, #7859d1, #5f45d6, #4b40d0, #333bc9, #0137c3, #023baf, #143d9a, #223e84, #2d3e6e);
+    border: 5px solid rgba(7, 11, 134, 0.8);
+    border-radius: 2em;
+    padding: 3%;
+    column-gap: 20px; 
+}
+
+.square {
+    background-color: rgba(106, 113, 175, 0.8);
+    border: 5px solid rgba(7, 11, 134, 0.8);
+    padding: 0%;
+    font-size:x-large;
+    font-weight: 800;
+    text-align: center;
+    height: 8.5em;
+    width: 8.5em;
+    display: grid;
+    justify-content: center;
+    padding: 3%;
+    align-items:center;
+    text-align: center;
+    border-radius: 2em;
+    margin-bottom: 20px;
+}
+
+.status {
+    color: rgb(179, 198, 215);
+    font-size: 1.5rem;
+    align-items:center;
+    text-align: center;
+    border-radius: 2em;
+    padding: 1em;
+    font-weight: 700;
+}
+
+button.restart-button {
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: .5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 1vh;
+}

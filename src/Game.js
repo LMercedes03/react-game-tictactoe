@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Board } from "./Board"
 import { CalculateWinner } from "./CalculateWinner"
-import "./TicTacToe.css"
+import "./Game.css"
 
 export const Game = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));   // State variable to track the state of each square on the board
@@ -34,7 +34,7 @@ export const Game = () => {
     let status;
 
     if (winner) {
-      status = `Winner: ${winner}`;   // If there is a winner, set the status message with the winner's symbol
+      status = `Winner: ${winner}🎉🎊`;   // If there is a winner, set the status message with the winner's symbol
     } else if (squares.every((square) => square)) {
       status = "It's a tie!";
     } else {
