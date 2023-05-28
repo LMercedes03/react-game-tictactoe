@@ -1,4 +1,23 @@
+div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+button:hover {
+    box-shadow: 0 15px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
 button.start-button {
+    background-color: rgb(216, 217, 217);
     display: flex;
     justify-items: center;
     align-items: center;
@@ -6,30 +25,11 @@ button.start-button {
     align-content: center;
     margin-top: 40vh;
     font-weight: 600;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     border-radius: 15px;
     padding: 1em;
-    padding-left:4em;
-    padding-right: 4em;
+    padding-left: 7.5em;
+    padding-right: 7.5em;
     margin-top: 30vh;
-}
-
-button:hover {
-    box-shadow: 0 15px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-button:active {
-    transform: scale(0.98);
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    }
-    
-div {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    margin:0;
-}
-
-   
+  }
